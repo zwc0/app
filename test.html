@@ -1,6 +1,6 @@
 <div></div>
 <script>
-document.getElemenntsByTagName('div')[0].textContent = `Start: ${localStorage.timetest}, End: ${localStorage.timetest2}`;
+document.getElementsByTagName('div')[0].textContent = `Start: ${localStorage.timetest}, End: ${localStorage.timetest2}`;
 localStorage.timetest = Date();
 window.addEventListener('beforeunload',e=>localStorage.timetest2 = Date());
 </script>
